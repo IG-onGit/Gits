@@ -1,0 +1,6 @@
+# {{cliname}}-start: {{service}}_{{user}}
+Host {{service}}.com-{{user}}
+   HostName {{service}}.com
+   User git
+   IdentityFile {{storage}}/{{service}}_{{user}}
+# {{cliname}}-end: {{service}}_{{user}}
