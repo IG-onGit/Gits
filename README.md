@@ -1,7 +1,7 @@
 # Gits v1.0
 
 **Project**: Gits
-<br>**Version**: 1.0.1
+<br>**Version**: 1.0.2
 <br>**OS**: Microsoft / Windows
 <br>**Author**: Irakli Gzirishvili
 <br>**Mail**: gziraklirex@gmail.com
