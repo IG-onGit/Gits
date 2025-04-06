@@ -1,6 +1,6 @@
 {
   "Name": "Gits",
-  "Version": "1.0.2",
+  "Version": "1.0.3",
   "Description": "Gits is a Python command-line application designed to help you to handle multiple GitHub and GitLab repositories on your machine. With using Gits, you can start cloning from and pushing to multiple GitHub and GitLab accounts without any additional configurations - It automatically sets up everything needed to prevent conflicts between your accounts.",
   "Link": "https://github.com/IG-onGit/Gits",
   "CMD": "gits",

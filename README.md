@@ -1,14 +1,14 @@
 # Gits v1.0
 
 **Project**: Gits
-<br>**Version**: 1.0.2
+<br>**Version**: 1.0.3
 <br>**OS**: Microsoft / Windows
 <br>**Author**: Irakli Gzirishvili
 <br>**Mail**: gziraklirex@gmail.com
 
 **Gits** is a Python command-line interface application, designed to help you to work with multiple GitHub and GitLab account repositories on your development machine.
 
-Using **Gits**, you can start cloning from and pushing to multiple GitHub and GitLab accounts without any additional configurations - It automatically sets up everything needed to prevent conflicts between your repositories and accounts.
+Using **Gits**, you can start cloning from and pushing to multiple GitHub and GitLab accounts without any additional configurations - It automatically sets up everything needed to prevent conflicts between your accounts.
 
 Disclaimer: Gits CLI app is an independent open-source project (created by Irakli Gzirishvili) and is not affiliated with, endorsed by or officially associated with Git, GitHub or GitLab.
 
