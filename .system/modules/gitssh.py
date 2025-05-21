@@ -32,13 +32,13 @@ class GitSSH:
 
         return obj.__dropUser(user)
 
-    def cloneProject(current="", link=""):
+    def cloneProject(current="", link="", connection=""):
         if not os.path.exists(current) or not link:
             return False
 
         obj = GitSSH("", "")
 
-        return obj.__cloneProject(current, link)
+        return obj.__cloneProject(current, link, connection)
 
     def printConnections():
         obj = GitSSH("", "")
@@ -178,12 +178,14 @@ class GitSSH:
 
         return False
 
-    def __cloneProject(self, current="", link=""):
+    def __cloneProject(self, current="", link="", connection=""):
         if not self.catalog:
             cli.error("No connections detected")
             return False
 
-        hint = self.__selectUser()
+        hint = connection.strip()
+        if not hint:
+            hint = self.__selectUser()
         if hint not in self.catalog:
             cli.error("Invalid connection")
             return False

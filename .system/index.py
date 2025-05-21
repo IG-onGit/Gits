@@ -26,14 +26,14 @@ class index:
         print()
         cli.done("Add this SSH key to your service:\n\n" + attr("reset") + key)
 
-    def clone(self, url=""):  # (ssh-url) - Clone project from GitHub / GitLab
+    def clone(self, url="", connection=""):  # (ssh-url) - Clone project from GitHub / GitLab
         if not url.strip() or url[-4:] != ".git":
             return "Invalid ssh-url!"
 
         if cli.isFolder(f"{self.cwd}/.git"):
             return "Folder is already taken!"
 
-        if not GitSSH.cloneProject(self.cwd, url):
+        if not GitSSH.cloneProject(self.cwd, url, connection):
             return "Cloning failed!"
 
         return "Project clonned successfully"
