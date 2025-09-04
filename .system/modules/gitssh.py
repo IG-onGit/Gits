@@ -194,7 +194,9 @@ class GitSSH:
         mail = self.catalog[hint]["mail"]
 
         link = link.replace(":", f"-{user}:")
-        name = link.split("/").pop().split(".")[0].strip()
+        parts = os.path.basename(link).split(".")
+        parts.pop()
+        name = ".".join(parts).strip()
         self.__execute(f"git clone {link}", "git clone")
 
         source_folder = os.path.join(current, name)
